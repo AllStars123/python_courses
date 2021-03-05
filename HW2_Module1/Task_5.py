@@ -10,15 +10,18 @@
 # Задачи со * предназначены для продвинутых учеников, которым мало сделать обычное задание
 
 prices = [12.34, 34.2, 1243.45, 76.42, 421.65, 89.42, 34.02, 45]
+prices_2 = []
 
 def rub_and_penny(elem):
     rub = int(elem)
     penny = int(elem * 100) % 100
-    print(f'{rub} рублей {penny:02d} копеек')
+    prices_2.append(f'{rub} рублей {penny:02d} копеек')
 
 prices.sort()
 
 print('По возрастанию')
+
+prices_2 = []
 for tmp in prices:
     rub_and_penny(tmp)
 
@@ -28,6 +31,7 @@ print('По убыванию')
 
 sort_prices = sorted(prices, reverse=True)
 
+prices_2 = []
 for tmp in sort_prices:
     rub_and_penny(tmp)
 
