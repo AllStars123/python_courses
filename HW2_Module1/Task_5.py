@@ -21,7 +21,6 @@ prices.sort()
 
 print('По возрастанию')
 
-prices_2 = []
 for tmp in prices:
     rub_and_penny(tmp)
 
@@ -38,5 +37,6 @@ for tmp in sort_prices:
 print('------------------')
 print('5 самых дорогих товаров по возростанию')
 
+prices_2 = []
 for tmp in prices[-5:]:
     rub_and_penny(tmp)
