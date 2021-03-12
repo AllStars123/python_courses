@@ -1,3 +1,7 @@
+# Доработать функцию get_currency_rate(): теперь она должна возвращать курс и дату,
+# на которую этот курс действует (взять из того же файла ЦБ РФ).
+# Для значения курса используйте тип Decimal (https://docs.python.org/3.8/library/decimal.html) вместо float.
+# Дата должна быть типа datetime.date
 import requests
 from requests import utils
 from decimal import *
