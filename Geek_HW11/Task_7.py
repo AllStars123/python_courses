@@ -36,20 +36,28 @@ class Complex:
     def __add__(self, other):
         return Complex(self.real + other.real, self.imaginary + other.imaginary)
 
+    def __sub__(self, other):
+        return Complex(self.real - other.real, self.imaginary - other.imaginary)
+
     def __mul__(self, other):
         return Complex(
             self.real * other.real - self.imaginary * other.imaginary, self.real * other.imaginary + self.imaginary * other.real)
 
 
 if __name__ == '__main__':
-    num1 = Complex(1, 2)
+    num1 = Complex(2, 4)
     num2 = Complex(1, 2)
     print(num1 + num2)
     print(num1 * num2)
+    print(num1 - num2)
 
-    test1 = complex(1, 2)
+    print('----------')
+
+    test1 = complex(2, 4)
     test2 = complex(1, 2)
     z = test1 + test2
     z1 = test1 * test2
+    z2 = test1 - test2
     print(z)
     print(z1)
+    print(z2)
